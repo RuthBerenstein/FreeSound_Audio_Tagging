@@ -1,10 +1,9 @@
 𝑀𝑎𝑐ℎ𝑖𝑛𝑒 𝑙𝑒𝑎𝑟𝑛𝑖𝑛𝑔  
 𝐹𝑟𝑒𝑒−𝑆𝑜𝑢𝑛𝑑 𝐴𝑢𝑑𝑖𝑜 𝑇𝑎𝑔𝑔𝑖𝑛𝑔 𝑃𝑟𝑜𝑗𝑒𝑐𝑡 
 
-𝐴 𝑡𝑒𝑠𝑡 𝑎𝑙𝑔𝑜𝑟𝑖𝑡ℎ𝑚 𝑓𝑜𝑟𝑡𝑎𝑔𝑔𝑖𝑛𝑔 𝑎𝑢𝑑𝑖𝑜 𝑑𝑎𝑡𝑎 𝑎𝑢𝑡𝑜𝑚𝑎𝑡𝑖𝑐𝑎𝑙𝑙𝑦.  
-
+𝐴 𝑡𝑒𝑠𝑡 𝑎𝑙𝑔𝑜𝑟𝑖𝑡ℎ𝑚 𝑓𝑜𝑟 𝑡𝑎𝑔𝑔𝑖𝑛𝑔 𝑎𝑢𝑑𝑖𝑜 𝑑𝑎𝑡𝑎 𝑎𝑢𝑡𝑜𝑚𝑎𝑡𝑖𝑐𝑎𝑙𝑙𝑦.  
 𝐵𝑦  𝑝𝑟𝑜𝑐𝑒𝑠𝑠𝑖𝑛𝑔 𝑠𝑜𝑢𝑛𝑑 𝑤𝑎𝑣𝑒 𝐹𝑖𝑙𝑒𝑠 𝑎𝑛𝑑 𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑖𝑛𝑔 𝑟𝑒𝑙𝑒𝑣𝑎𝑛𝑡 𝑠𝑖𝑔𝑛𝑎𝑙 𝐹𝑒𝑎𝑡𝑢𝑟𝑒𝑠  
-𝐴𝑖𝑚𝑒𝑑 𝑎𝑡 𝑖𝑑𝑒𝑛𝑡𝑖𝑓𝑖𝑛𝑔 𝑎 𝑑𝑖𝑣𝑒𝑟𝑠𝑒 𝑣𝑜𝑐𝑎𝑏𝑢𝑙𝑎𝑟𝑦 𝑜𝑓𝑐 𝑎𝑡𝑒𝑔𝑜𝑟𝑖𝑒𝑠 𝑠𝑢𝑐ℎ 𝑎𝑠:  
+𝐴𝑖𝑚𝑒𝑑 𝑎𝑡 𝑖𝑑𝑒𝑛𝑡𝑖𝑓𝑖𝑛𝑔 𝑎 𝑑𝑖𝑣𝑒𝑟𝑠𝑒 𝑣𝑜𝑐𝑎𝑏𝑢𝑙𝑎𝑟𝑦 𝑜𝑓 𝑐𝑎𝑡𝑒𝑔𝑜𝑟𝑖𝑒𝑠 𝑠𝑢𝑐ℎ 𝑎𝑠:  
 ★  𝐷𝑜𝑔 𝑏𝑎𝑟𝑘  ★  𝐵𝑖𝑏𝑦𝑐𝑙𝑒 𝑏𝑒𝑙𝑙  ★ 
 ★  𝐶𝑎𝑟 𝑝𝑎𝑠𝑠𝑖𝑛𝑔 𝑏𝑦  ★  𝐵𝑢𝑠 𝑠𝑜𝑢𝑛𝑑  ★  𝐻𝑢𝑚a𝑛 𝑠𝑝𝑒𝑎𝑘𝑖𝑛𝑔 𝑠𝑜𝑢𝑛𝑑  ★
 
@@ -15,12 +14,12 @@
 
 2.𝐸𝐷𝐴 𝑎𝑛𝑑 𝐹𝑒𝑎𝑡𝑢𝑟𝑒𝑠 𝑏𝑢𝑖𝑙𝑡
   ★ Process wav files: 
-    - Calculate Mel-Frequency Cepstrum Coefficients (MFCCs) of the Pre-emphasis signal.
-    - Split the signal into short-time frames ( frequencies in a signal are stationary over a very short period of time).
+    - Calculate Mel-Frequency Cepstrum Coefficients (MFCCs) of the signal.
+    - Split the signal into short-time frames (frequencies in a signal are stationary over a very short period of time).
     - Apply a Hanning window function to each frame (better frequency acccuricy due to largest sidelobe removal).
     - Preform Fourier-Transform and Power Spectrum on each time frame.
-    - Calulate the max frequency of each fft fram - list of freqs represents the entire signal.
-    - Calculate statistic parameters
+    - Calulate the max frequency of each fft fram - create a list of frequencies that represents the entire signal.
+    - Calculate some statistic parameters on the frequencies list.
   ★ Build a new dataset of all new features and save to features.csv file 
   ★ Exampled Plots of a wave file 
 
@@ -29,3 +28,6 @@
   ★ Logistic Regression Model with GridSearchCV
   ★ Random forest model 
   ★ Ensemble DecisionTreeClassifier with Bagging 
+
+
+Enjoy viewing..
